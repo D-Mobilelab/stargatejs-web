@@ -23,9 +23,13 @@ module.exports = new function(){
     * @description Initialize Stargate
     *
     * @param {Object} options configuration object
-    * @param {Function} callback called when initialization is finished, you can use also the promise resolution. The callback will be called with an argument that indicate if we're running inside the hybrid app.
+    * @param {Function} callback called when initialization is finished,
+    * you can use also the promise resolution. The callback will be called with
+    * an argument that indicate if we're running inside the hybrid app.
     * 
-    * @return {Promise} promise will be resolved when start is completed, rejected if failed. The promise will be resolved with an argument that indicate if we're running inside the hybrid app.
+    * @return {Promise} promise will be resolved when start is completed, rejected if failed.
+    * The promise will be resolved with an argument that indicate if we're running inside the hybrid app.
+    *
     */
     this.initialize = function(options, callback) {
         if (typeof callback === 'function') {

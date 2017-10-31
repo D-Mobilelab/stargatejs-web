@@ -45,13 +45,16 @@ gulp.task('coveralls', function(){
 gulp.task('webpack', function(){
     return gulp.src('src/main.js')
     .pipe(webpack({
+        devtool: 'source-map',
         output: {
-            filename: 'main.js',
+            filename: 'stargate-web.js',
             libraryTarget: 'umd',
             library: 'Stargate'
         },
         plugins: [
-            new UglifyJSPlugin()
+            new UglifyJSPlugin({
+                sourceMap: true
+            })
         ]
     }))
     .pipe(insert.append('\n\n/* stargatejs-web ' + version + ' */'))
