@@ -22,10 +22,8 @@
     "url": "https://github.com/D-Mobilelab/stargatejs-web"
   },
   "scripts": {},
-  "dependencies": {
-    "promise-polyfill": "^6.0.2"
-  },
   "devDependencies": {
+    "promise-polyfill": "^6.0.2",    
     "browser-sync": "^2.18.12",
     "del": "^2.2.2",
     "eslint": "^3.19.0",
