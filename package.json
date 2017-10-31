@@ -23,7 +23,6 @@
   },
   "scripts": {},
   "devDependencies": {
-    "promise-polyfill": "^6.0.2",    
     "browser-sync": "^2.18.12",
     "del": "^2.2.2",
     "eslint": "^3.19.0",
@@ -46,8 +45,9 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
+    "promise-polyfill": "^6.0.2",
     "uglifyjs-webpack-plugin": "^1.0.1",
-    "webpack": "^2.6.1",
+    "webpack": "^3.6.0",
     "yargs": "^8.0.1"
   },
   "engines": {

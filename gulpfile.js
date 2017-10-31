@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-var webpack = require('gulp-webpack');
+var gulplWebpack = require('gulp-webpack');
+var webpack = require('webpack');
 var del = require('del');
 var browsersync = require('browser-sync');
 var coveralls = require('gulp-coveralls');
@@ -44,7 +45,7 @@ gulp.task('coveralls', function(){
 
 gulp.task('webpack', function(){
     return gulp.src('src/main.js')
-    .pipe(webpack({
+    .pipe(gulplWebpack({
         devtool: 'source-map',
         output: {
             filename: 'stargate-web.js',
@@ -52,8 +53,13 @@ gulp.task('webpack', function(){
             library: 'Stargate'
         },
         plugins: [
-            new UglifyJSPlugin({
-                sourceMap: true
+            new webpack.optimize.UglifyJsPlugin({
+                minimize: true,
+                output: {
+                  comments: false,
+                },
+                sourceMap: true,
+                compress: { warnings: false, screw_ie8: true }            
             })
         ]
     }))
