@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/D-Mobilelab/stargatejs-web/badge.svg?branch=master&v=1)](https://coveralls.io/github/D-Mobilelab/stargatejs-web?branch=master)
 [![npm version](https://badge.fury.io/js/stargatejs-web.svg)](https://badge.fury.io/js/stargatejs-web)
 [![Bower version](https://badge.fury.io/bo/stargatejs-web.svg)](https://badge.fury.io/bo/stargatejs-web)
-[![GitHub version](https://badge.fury.io/gh/D-Mobilelab%2Fstargatejs-web.svg)](https://badge.fury.io/gh/D-Mobilelab%2Fstargatejs-web)
+[![GitHub version](https://badge.fury.io/gh/D-Mobilelab%2Fstargatejs-web.svg)](https://badge.fury.io/gh/D-Mobilelab%2Fstargatejs-web) [![Greenkeeper badge](https://badges.greenkeeper.io/D-Mobilelab/stargatejs-web.svg)](https://greenkeeper.io/)
 
 ## Installation
 
